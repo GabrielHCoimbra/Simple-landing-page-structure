@@ -1,0 +1,263 @@
+/*Zerando margens da pagina*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /*background-image: linear-gradient(to right, rgb(5, 154, 42), rgb(0, 0, 0));*/
+    color: black;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+/*Parallax Effect---------------------------------------------------------------*/
+div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div:nth-of-type(2){
+    background-image: url(../img/swamp.jpeg);
+}
+div:nth-of-type(4){
+    background-image: url(../img/wallpaperbetter.jpg);
+}
+div:nth-of-type(5){
+    background-image: url(../img/beach.jpg);
+}
+
+/*Header------------------------------------------------------------------------*/
+
+nav{
+    padding-left: 72vw;
+    display: inline-block;
+    padding-top: 1em;
+    height: 42.5px;
+    transition: 0.1s;
+    background-image: linear-gradient(to bottom, #4B84AD,  #34A6F7);
+}
+
+nav a{
+    font-size: 15px;
+    transition: 0.5s;
+    color: #AB2624;
+    font-family: Poppins;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover{
+    font-size: 20px;
+}
+
+.FixOnTop{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+/*GIF------------------------------------------------------------------------------*/
+
+#gif{
+    margin-top: 3em;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: -4px;
+}
+
+/*DIV about------------------------------------------------------------------------*/
+
+#sobre{
+    min-height: 50vh;
+}
+
+.title{
+    background-image: none;
+    background-color: #34A6F7;
+    padding: 5px;
+    padding-top: 5px;
+    margin: 0px;
+    color: #AB2624;
+}
+ 
+h2{
+    text-align: justify;
+    margin-left: 10px;
+    transition: 0.3s;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 20px;
+    font-family: Orbitron;
+}
+
+
+h2:hover{
+    transition: 0.5s;
+    letter-spacing: 40px;
+}
+
+#sobre p{
+    text-align: justify;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    color: #fff;
+}
+
+/*DIV Photos-------------------------------------------------------------------*/
+
+#description{
+    margin-top: 0px;
+    text-decoration: solid;
+    font-size: 10px;
+    color: #fff;
+    margin-top: 0px;
+    text-decoration: solid;
+    font-size: 10px;
+    margin-left: 36%;
+}
+
+#photos{
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 2em;
+}
+
+div img{
+    width: 25vw;
+    height: 15vw;
+    margin-left: 36%;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+
+/*Sroll Bar-------------------------------------------------------------------------------------------------------------------------*/
+/*Outside part*/
+::-webkit-scrollbar{
+    width: 0.5px;
+}
+
+/*Inside part*/
+::-webkit-scrollbar{
+    width: 0.5px;
+}
+
+/*Form----------------------------------------------------------------------------------*/
+
+form{
+    display: block;
+    text-align: center;
+    padding-bottom: 5vh;
+    margin-top: 15px;
+    font-family: Poppins;
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    width: 300px;
+}
+
+textarea{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+}
+
+#formp{
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 25px;
+    font-family: Poppins;
+    color: #AB2624;
+    font-weight: bold;
+
+}
+
+#name_t{
+    font-size: 22px;
+    color: greenyellow;
+}
+
+#mail_t{
+    font-size: 22px;
+    color: greenyellow;
+}
+
+#mess_t{
+    font-size: 22px;
+    color: greenyellow;
+}
+
+input, textarea{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/*Enter button--------------------------------------------------------------------------*/
+#enter{
+    margin-top: 10px;
+}
+
+#enter {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #F7F765;
+    background-color: #F7504D;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+#enter:hover {
+    background-image: linear-gradient(to right,  rgb(5, 154, 42) 0%, rgb(0, 0, 0) 2000%);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}  
+
+#enter:active {
+    transform: translateY(-1px);
+}
+/*------------------------------------------------------------------------*/
+
+/*Footer------------------------------------------------------------------*/
+   
+footer p {
+    text-align: center;
+    padding-right: 0em;
+    padding-left: 0em;
+    margin-top: 0em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+footer {
+    background-color: #34A6F7;
+    text-align: center;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+
+/*Responsividade-------------------------------------------------------------------*/
+@media screen and (max-width: 760px){
+    nav{
+        padding-left: 2vw;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 1em;
+        padding-top: 1em;
+        background-color: aqua;
+        height: 6vh;
+    }
+}
+

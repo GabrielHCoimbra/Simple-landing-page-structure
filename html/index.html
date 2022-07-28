@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <title>Meu Site</title>
+</head>
+<body onload="Animations()">
+    <!--Header-->
+    <header id="header">
+        <nav class="menu">
+            <a href="#header">Inicio</a>
+            <a href="#title_sobre">Sobre</a>
+            <a href="#title_photos">Fotos</a>
+            <a href="#title_FC" id="m_title_FC">Fale Conosco</a>
+        </nav>
+    </header>
+    <!--First IMG-->
+    <img id="gif" src="../img/natureza-20.gif" alt="imagem de paisagem">
+    <!--DIV Sobre-->
+    <div class="title">  
+        <h2 id="title_sobre">Sobre</h2>
+    </div>
+    <div id="sobre">
+        <p>Lorem ipsum integer conubia nec diam elit facilisis cras, fusce fringilla vulputate sem pellentesque proin. nulla suspendisse torquent pretium nisi dictum ut, inceptos tempus sociosqu at mollis, magna vulputate sodales proin ornare. mauris nunc sollicitudin senectus bibendum vel quis vestibulum, curabitur commodo maecenas tempus libero class. rutrum eros porttitor velit fames rhoncus orci mollis, nunc massa netus et</p>
+    </div>
+    <!--DIV Photos-->
+    <div class="title">
+        <h2 id="title_photos">Fotos</h2>
+    </div>
+    <div id="photos">
+        <img src="../img/wallpaperbetter.jpg" alt="">
+        <p id="description">> Paisagem Montanhas</p>
+        <img src="../img/wallpaperbetter.jpg" alt="">
+        <p id="description">> Paisagem Montanhas</p>
+        <img src="../img/wallpaperbetter.jpg" alt="">
+        <p id="description">> Paisagem Montanhas</p>
+    </div>
+    <!--DIV Contact us-->
+    <div class="form">
+        <div class="title">
+            <h2 id="title_FC">Fale Conosco</h2>
+        </div>
+        <p id="formp">Converse conosco para decidirmos o melhor destino para você!</p>
+        <form action="https://formsubmit.co/f715cf2457bcef48b1d677dc898e80e1" method="post">
+            <label for="name" id="name_t">Nome</label><br>
+            <input type="text" id="name" placeholder="Digite seu nome"><br>
+            <label for="mail" id="mail_t">E-mail</label><br>
+            <input type="email" id="mail" placeholder="Digite seu melhor email"><br>
+            <label for="mess" id="mess_t">Mensagem</label><br>
+            <textarea name="" id="mess" cols="39" rows="10" placeholder="Digite sua mensagem"></textarea><br>
+            <input type="submit" value="Enviar" id="enter">
+            
+        </form>
+    </div>
+    <!--Footer-->
+    <footer>
+        <p>GABRIEL HENRIQUE &copy;2022 TODOS DIREITOS RESERVADOS</p>
+    </footer>
+</body>
+</html>
